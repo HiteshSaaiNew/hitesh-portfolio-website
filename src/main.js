@@ -169,7 +169,7 @@ document.querySelector('#app').innerHTML = `
       <canvas class="field" aria-hidden="true"></canvas>
       <div class="hero-wash" aria-hidden="true"></div>
       <div class="hero-inner">
-        <p class="hero-kicker">${site.role} <span>·</span> ${site.location} <span>·</span> ${site.status}</p>
+        <p class="hero-kicker"><span aria-hidden="true">·</span>${site.role} <span>·</span> ${site.location}</p>
         <h1 class="name" aria-label="${site.name}">
           <span class="name-line" aria-hidden="true">${[...site.name.toUpperCase()]
             .map((c) => (c === ' ' ? '<span class="sp"> </span>' : `<span class="ch">${c}</span>`))
