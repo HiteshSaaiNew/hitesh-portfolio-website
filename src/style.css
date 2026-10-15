@@ -340,10 +340,13 @@ p {
   text-align: center;
 }
 .hero-kicker {
-  font-size: var(--step-small);
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.1875rem);
   font-weight: 500;
   color: var(--muted-on-ink);
   letter-spacing: 0.01em;
+}
+.hero-kicker span:first-child {
+  margin-left: 0; /* the leading dot: same glyph as the separator */
 }
 .hero-kicker span {
   color: var(--accent);
