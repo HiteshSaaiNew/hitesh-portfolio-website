@@ -308,14 +308,14 @@ const heroField = cellField(document.querySelector('.hero .field'), {
   bg: '#161616',
   base: '#252524',
   heat: '#6b6862',
-  mark: '#e8490f',
+  mark: '#00b86b',
   reduceMotion,
 })
 cellField(document.querySelector('.contact .field'), {
-  bg: '#e8490f',
-  base: '#e04610',
-  heat: '#cc3f0b',
-  mark: '#b8390a',
+  bg: '#00b86b',
+  base: '#00b066',
+  heat: '#009e5c',
+  mark: '#00854d',
   reveal: false,
   reduceMotion,
 })

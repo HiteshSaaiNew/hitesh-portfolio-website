@@ -7,8 +7,9 @@
   --ink-raised: #1f1f1e;
   --muted: #4b4945;
   --muted-on-ink: #a9a6a0;
-  --accent: #e8490f; /* the action, the contact field, marked data */
-  --accent-ink: #b8390a; /* accent as text on paper: 5.3:1 */
+  --accent: #00b86b; /* the action, the contact field, marked data */
+  --accent-ink: #0a7350; /* accent as text on paper: 5.6:1 */
+  --accent-on-ink: #00b86b; /* accent on ink surfaces: 6.9:1 */
   --cell-empty: #d4d4d1;
   --cell-base: #7d7b75;
   color-scheme: light;
@@ -349,7 +350,7 @@ p {
   margin-left: 0; /* the leading dot: same glyph as the separator */
 }
 .hero-kicker span {
-  color: var(--accent);
+  color: var(--accent-on-ink);
   margin: 0 6px;
 }
 .name {
@@ -380,7 +381,7 @@ p {
   width: 0.4em;
   height: 0.11em;
   margin: 0 0 0.02em 0.1em;
-  background: var(--accent);
+  background: var(--accent-on-ink);
   transform-origin: left;
   animation: blink 1.1s steps(1) infinite;
 }
@@ -451,6 +452,7 @@ p {
 .card.tone-ink {
   --cell-empty: #2d2d2b;
   --cell-base: #8f8c85;
+  --accent: var(--accent-on-ink);
   --muted: var(--muted-on-ink);
   background: var(--ink);
   color: var(--paper);
@@ -1076,7 +1078,7 @@ p {
   display: none;
 }
 
-/* ---------- Contact: the orange field ---------- */
+/* ---------- Contact: the emerald field ---------- */
 .contact {
   position: relative;
   isolation: isolate;
