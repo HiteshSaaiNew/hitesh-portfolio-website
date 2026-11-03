@@ -254,7 +254,7 @@ document.querySelector('#app').innerHTML = `
             .join('')}
         </section>
 
-        <section class="work" id="work" data-exhibit="optipixel">
+        <section class="work" id="work" data-exhibit="vllmEks">
           <h2 class="section-head">${masked('Selected work')}</h2>
           <ul class="projects">
             ${projects
@@ -271,7 +271,7 @@ document.querySelector('#app').innerHTML = `
               )
               .join('')}
           </ul>
-          ${inline('optipixel')}
+          ${inline('vllmEks')}
         </section>
       </div>
 
