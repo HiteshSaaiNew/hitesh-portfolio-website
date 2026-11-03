@@ -38,13 +38,13 @@ export const about = {
 
 export const projects = [
   {
-    title: 'OptiPixel Video Encoder',
-    year: '2024',
+    title: 'vLLM Inference on Amazon EKS',
+    year: '2026',
     summary:
-      'Official code for my arXiv paper: removes redundant pixels between frames using deep-learning pixel tracking, cutting video storage by 85%.',
-    tags: ['Computer Vision', 'PyTorch', 'Video'],
-    url: 'https://github.com/HiteshSaaiNew/optipixel_video_encode',
-    exhibit: 'optipixel',
+      'A production-style, OpenAI-compatible API serving Qwen3-8B with vLLM on EKS GPU nodes: weights pulled privately from S3 via Pod Identity, cached on EBS, exposed through an API-key-protected ALB.',
+    tags: ['LLM Inference', 'vLLM', 'Kubernetes', 'AWS'],
+    url: 'https://github.com/HiteshSaaiNew/vllm-inference-using-aws-eks',
+    exhibit: 'vllmEks',
   },
   {
     title: 'AI Image Deblurring',
@@ -188,9 +188,9 @@ export const exhibits = {
     image: { src: '/figures/patent-fig3.webp', w: 1488, h: 1128, alt: 'FIG. 3 of US patent 12,518,222: a frequency distribution of travel results with a curve fitted over a histogram, its peak marking the most popular option.' },
     caption: 'From my patent: an open query is resolved by learning which parameters were left out and filling them from what is most popular with travellers.',
   },
-  optipixel: {
-    image: { src: '/figures/paper-frame-shift.webp', w: 720, h: 405, alt: 'Diagram from the OptiPixel repository: four ways a frame can shift relative to the previous one, right-down, right-up, left-up and left-down.' },
-    caption: 'From the OptiPixel repository: the four ways one frame can shift against the last. Only the uncovered strip is new data.',
+  vllmEks: {
+    image: { src: '/figures/vllm-eks-architecture.svg', w: 1280, h: 830, alt: 'Architecture of the vLLM on EKS repository: a client calls an internet-facing ALB, which forwards to the vLLM pod on a GPU node in private subnets; at startup an init container gets credentials through EKS Pod Identity and syncs Qwen3-8B weights from S3 through a gateway endpoint onto an EBS gp3 volume.' },
+    caption: 'From the vLLM on EKS repository: requests reach the GPU pod through the ALB, while weights travel privately from S3 to a cached EBS volume, never crossing the NAT gateway.',
   },
 }
 

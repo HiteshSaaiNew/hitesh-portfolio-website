@@ -52,7 +52,7 @@ All in `src/content.js`:
 
 - Experience: Oracle (Principal AI Engineer, Jun–Sep 2026), Expedia Group (Senior MLE, 2022–2026), Verisk Analytics (Data Scientist / MLE, 2020–2022), Cognizant (Program Analyst, 2016–2017), each with quantified highlights.
 - Research: arXiv 2406.19630 (pixel-shift video compression, 85% smaller files); US Patent 12,518,222 (ML search-query optimization).
-- Projects: OptiPixel Video Encoder, AI Image Deblurring, PDF to Audiobook (GitHub links).
+- Projects: vLLM Inference on Amazon EKS, AI Image Deblurring, PDF to Audiobook (GitHub links).
 - Headline numbers: 8+ years in ML & data, 2× LLM throughput. Savings are stated per employer ($250K/yr at Expedia, $100K+/yr at Verisk), never summed.
 - GitHub: https://github.com/HiteshSaaiNew
 - Hugging Face: https://huggingface.co/HiteshSaai
